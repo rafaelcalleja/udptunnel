@@ -12,7 +12,7 @@ ENV TOOLCHAIN_DIR ${STAGING_DIR}/toolchain-mipsel_24kc_gcc-7.3.0_musl
 
 USER root
 RUN apt update -yq && apt install -y pkg-config && \
-    rm -rf /var/lib/apt/lists/* \
+    rm -rf /var/lib/apt/lists/*
 
 USER build
 
